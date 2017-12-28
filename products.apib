@@ -1,12 +1,14 @@
 ## Group Products
 
-### Recommended [GET /products/{_id}/recommended.json]
+### Recommended [/products/{_id}/recommended.json]
 
 Takes the defined _\_id_ by reference and returns up to 12
 recommended products, selecting the products that was more
 times bought together with the reference product
 
 You should use it to do something like "who bought it, bought too"
+
+#### List Recommended Items [GET]
 
 + Parameters
     + _id: a00000000000000000000000 (string, required) - The product ID
@@ -18,13 +20,15 @@ You should use it to do something like "who bought it, bought too"
           "api_key": "1234567890abcdef"
         }
 
-### Related [GET /products/{_id}/related.json]
+### Related [/products/{_id}/related.json]
 
 Takes the defined _\_id_ by reference and returns up to 12
 related products, selecting the products that have more
 categories in common with the reference product
 
 You should use it to do something like "you can also be interested by"
+
+#### List Related Items [GET]
 
 + Parameters
     + _id: a00000000000000000000000 (string, required) - The product ID
