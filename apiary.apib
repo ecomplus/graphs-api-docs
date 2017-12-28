@@ -60,9 +60,11 @@ Response body is formatted as JSON, always an object like the one below:
   "results": [
     {
       "columns": [
-        "products"
+        "products.id"
       ],
       "data": [
+        [ "{_id}" ],
+        [ "{_id}" ]
         ...
       ]
     }
@@ -136,11 +138,11 @@ Feel free to get help or suggest alterations on
 
 ### Recommended [/products/{_id}/recommended.json]
 
-Takes the defined _\_id_ by reference and returns up to 12
+Takes the defined `_id_` by reference and returns up to 12
 recommended products, selecting the products that was more
 times bought together with the reference product
 
-You should use it to do something like "who bought it, bought too"
+You should use it to do something like _"who bought it, bought too"_
 
 #### List Recommended Items [GET]
 
@@ -150,17 +152,61 @@ You should use it to do something like "who bought it, bought too"
 + Response 200 (application/json)
 
         {
-          "_id": "10000000000000000000000f",
-          "api_key": "1234567890abcdef"
+          "results": [
+            {
+              "columns": [
+                "products.id"
+              ],
+              "data": [
+                [
+                  "a00000000000000000000001"
+                ],
+                [
+                  "a00000000000000000000002"
+                ],
+                [
+                  "a00000000000000000000003"
+                ],
+                [
+                  "a00000000000000000000004"
+                ],
+                [
+                  "a00000000000000000000005"
+                ],
+                [
+                  "a00000000000000000000006"
+                ],
+                [
+                  "a00000000000000000000007"
+                ],
+                [
+                  "a00000000000000000000008"
+                ],
+                [
+                  "a00000000000000000000009"
+                ],
+                [
+                  "a0000000000000000000000a"
+                ],
+                [
+                  "a0000000000000000000000b"
+                ],
+                [
+                  "a0000000000000000000000c"
+                ]
+              ]
+            }
+          ],
+          "errors": []
         }
 
 ### Related [/products/{_id}/related.json]
 
-Takes the defined _\_id_ by reference and returns up to 12
+Takes the defined `_id` by reference and returns up to 12
 related products, selecting the products that have more
 categories in common with the reference product
 
-You should use it to do something like "you can also be interested by"
+You should use it to do something like _"you can also be interested by"_
 
 #### List Related Items [GET]
 
@@ -170,6 +216,50 @@ You should use it to do something like "you can also be interested by"
 + Response 200 (application/json)
 
         {
-          "_id": "10000000000000000000000f",
-          "api_key": "1234567890abcdef"
+          "results": [
+            {
+              "columns": [
+                "products.id"
+              ],
+              "data": [
+                [
+                  "a00000000000000000000011"
+                ],
+                [
+                  "a00000000000000000000012"
+                ],
+                [
+                  "a00000000000000000000013"
+                ],
+                [
+                  "a00000000000000000000014"
+                ],
+                [
+                  "a00000000000000000000015"
+                ],
+                [
+                  "a00000000000000000000016"
+                ],
+                [
+                  "a00000000000000000000017"
+                ],
+                [
+                  "a00000000000000000000018"
+                ],
+                [
+                  "a00000000000000000000019"
+                ],
+                [
+                  "a0000000000000000000001a"
+                ],
+                [
+                  "a0000000000000000000001b"
+                ],
+                [
+                  "a0000000000000000000001c"
+                ]
+              ]
+            }
+          ],
+          "errors": []
         }
