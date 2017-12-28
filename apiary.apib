@@ -15,10 +15,14 @@ products recommendations systems
 
 ## Overview
 
-This API tries to be truly *RESTful*, following Web API Standards, taking as specifications references:
+All requests are proxy passed to Neo4j
+[Transactional Cypher HTTP endpoint](https://neo4j.com/docs/developer-manual/3.3/http-api/#http-api-transactional)
+with predefined cyphers, varying only by the resource ID
 
-- https://github.com/WhiteHouse/api-standards
-- https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+This API pass only
+[MATCH](https://neo4j.com/docs/developer-manual/current/cypher/clauses/match/)
+cyphers and the responses are the same as returned from _Neo4j HTTP API_,
+so you can read their documentation to get more info and examples
 
 ### Host
 
@@ -47,17 +51,6 @@ Based on HTTP/1.1 Status Code Definitions:
 - *2xx* - Successful
 - *4xx* - Client error, must check the request
 - *5xx* - Server error, report us and try again later
-
-### Neo4j HTTP API
-
-All requests are proxy passed to Neo4j
-[Transactional Cypher HTTP endpoint](https://neo4j.com/docs/developer-manual/3.3/http-api/#http-api-transactional)
-with predefined cyphers, varying only by the resource ID
-
-This API pass only
-[MATCH](https://neo4j.com/docs/developer-manual/current/cypher/clauses/match/)
-cyphers and the responses are the same as returned from _Neo4j HTTP API_,
-so you can read their documentation to get more info and examples
 
 ### Format
 
@@ -127,7 +120,7 @@ we recommend that you create treatments in case you receive a *503* status code
 - [GitHub organization](https://github.com/ecomclub)
 - [Community](https://community.e-com.plus)
 
-### Other REST APIs
+#### Other REST APIs
 
 - [Store](https://ecomstore.docs.apiary.io):
 E-Com Plus Store API, with all store resources
