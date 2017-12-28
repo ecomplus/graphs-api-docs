@@ -51,6 +51,28 @@ This API pass only
 cyphers and the responses are the same as returned from _Neo4j HTTP API_,
 so you can read their documentation to get more info and examples
 
+### Format
+
+Response body is formatted as JSON, always an object like the one below:
+
+```
+{
+  "results": [
+    {
+      "columns": [
+        "products"
+      ],
+      "data": [
+        ...
+      ]
+    }
+  ],
+  "errors": [
+    ...
+  ]
+}
+```
+
 ## Error Handling
 
 #### 404
