@@ -63,12 +63,10 @@ Response body is formatted as JSON, always an object like the one below:
       "data": [
         [ "{_id}" ],
         [ "{_id}" ]
-        ...
       ]
     }
   ],
   "errors": [
-    ...
   ]
 }
 ```
