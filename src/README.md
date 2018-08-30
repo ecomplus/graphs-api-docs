@@ -1,3 +1,15 @@
+# E-Com Plus Graphs API
+
+[E-Com Plus](https://www.e-com.plus)
+is a robust and flexible cloud commerce software,
+totally based on REST APIs, providing a large library of methods and specifications
+to deploy any digital commerce operation easly
+
+**Graphs API** is our public REST interface to
+[Neo4j](https://neo4j.com/) (graph database),
+our real-time recommendation engine, used to better implementations of
+products recommendations systems
+
 ## Overview
 
 All requests are proxy passed to Neo4j
@@ -41,7 +53,7 @@ Based on HTTP/1.1 Status Code Definitions:
 
 Response body is formatted as JSON, always an object like the one below:
 
-```
+```json
 {
   "results": [
     {
@@ -65,7 +77,7 @@ Response body is formatted as JSON, always an object like the one below:
 
 #### 404
 
-```
+```json
 {
   "status": 404,
   "error_code": -44,
@@ -80,7 +92,7 @@ being a valid 24 chars hexadecimal string
 
 #### 503
 
-```
+```json
 {
   "status": 503,
   "error_code": -53,
