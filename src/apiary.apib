@@ -56,7 +56,7 @@ Based on HTTP/1.1 Status Code Definitions:
 
 Response body is formatted as JSON, always an object like the one below:
 
-```
+```json
 {
   "results": [
     {
@@ -66,12 +66,10 @@ Response body is formatted as JSON, always an object like the one below:
       "data": [
         [ "{_id}" ],
         [ "{_id}" ]
-        ...
       ]
     }
   ],
   "errors": [
-    ...
   ]
 }
 ```
@@ -80,7 +78,7 @@ Response body is formatted as JSON, always an object like the one below:
 
 #### 404
 
-```
+```json
 {
   "status": 404,
   "error_code": -44,
@@ -95,7 +93,7 @@ being a valid 24 chars hexadecimal string
 
 #### 503
 
-```
+```json
 {
   "status": 503,
   "error_code": -53,
