@@ -5,3 +5,7 @@ recommended products, selecting the products that was more
 times bought together with the reference product
 
 You should use it to do something like _"who bought it, bought too"_
+
+#### List Recommended Items [GET]
+
+:[](.list-recommended-items.apib)

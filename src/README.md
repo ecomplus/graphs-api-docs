@@ -1,3 +1,6 @@
+FORMAT: 1A
+HOST: https://apx-graphs.e-com.plus/api/v1/
+
 # E-Com Plus Graphs API
 
 [E-Com Plus](https://www.e-com.plus)
@@ -129,3 +132,5 @@ Powerful text search API using Elasticsearch to find and suggest items (products
 Feel free to get help or suggest alterations on
 [GitHub repo](https://github.com/ecomclub/ecomplus-api-docs) or by e-mail
 [ti@e-com.club](mailto:ti@e-com.club)
+
+:[](products/apiary.apib)
