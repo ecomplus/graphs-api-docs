@@ -1,6 +1,3 @@
-FORMAT: 1A
-HOST: https://apx-graphs.e-com.plus/api/v1/
-
 # E-Com Plus Graphs API
 
 [E-Com Plus](https://www.e-com.plus)
