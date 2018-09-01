@@ -6,6 +6,6 @@ connected data based on
 [categories](https://ecomstore.docs.apiary.io/#reference/categories)
 auto-synchronized from a merchant's store
 
-:[](recommended/doc.apib)
+:[](recommended/blueprint.apib)
 
-:[](related/doc.apib)
+:[](related/blueprint.apib)
