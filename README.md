@@ -18,4 +18,4 @@ chmod +x build.sh
 # Online documentation
 https://developers.e-com.plus/reference/graphs
 
-https://ecomgraphs.docs.apiary.io/#
+https://ecomgraphs.docs.apiary.io/
